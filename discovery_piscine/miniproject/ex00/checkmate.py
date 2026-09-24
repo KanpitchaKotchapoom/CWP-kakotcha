@@ -62,7 +62,7 @@ def check_straight_lines(grid, king_pos):
     return False
 
 def check_diagonal_lines(grid, king_pos):
-    # เช็ค ไลน์เดินทแยงของหมาก P,Q
+    # เช็ค ไลน์เดินทแยงของหมาก B, Q
     king_row, king_col = king_pos
     for i, row in enumerate(grid):
         for j, cell in enumerate(row):
@@ -88,7 +88,7 @@ def check_diagonal_lines(grid, king_pos):
     return False
     
 def check_pawn(grid, king_pos):
-    # เช็คไลน์เดินทแยงของหมาก B
+    # เช็คไลน์เดินทแยงของหมาก P
     king_row, king_col = king_pos
     for i, row in enumerate(grid):
         for j, cell in enumerate(row):
